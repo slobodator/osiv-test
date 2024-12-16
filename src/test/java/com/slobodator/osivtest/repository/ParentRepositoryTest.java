@@ -4,12 +4,8 @@ import com.slobodator.osivtest.OsivTestApplicationTests;
 import com.slobodator.osivtest.entity.Parent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 class ParentRepositoryTest extends OsivTestApplicationTests {
-    @Autowired
-    private ParentRepository parentRepository;
-
     @BeforeEach
     void init() {
         parentRepository.save(
